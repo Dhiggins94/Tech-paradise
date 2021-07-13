@@ -12,7 +12,7 @@ The user will be able to select from a category of items such as computers, keyb
 
 Here is my wireframe for the website. its modeled after a phone display
 
-![WireFrame for website](https://i.imgur.com/60UPLws.png "its wireframe of the website built for phone first")
+![WireFrame for website](https://i.imgur.com/diw6GVd.png "its wireframe of the website built for phone first")
 
 ## Component Hierarchy
 
