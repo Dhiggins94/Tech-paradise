@@ -21,8 +21,26 @@ Here is my wireframe for the website. its modeled after a phone display
 
 ## API and Data Sample
 
-
-
+```{
+    "records": [
+        {
+            "id": "rec6QUnp2K3GJV8px",
+            "fields": {
+                "productDescription": "DESCRIPTION TEST",
+                "category ": "laptop TEST",
+                "reviews": "REVIEW TEST",
+                "name": "name TEST",
+                "image": "https://nzxt.com/assets/cms/34299/1618960827-elite5grid.png?auto=format&fit=max&h=900&w=900",
+                "rating": 3,
+                "price": 100,
+                "Brand": "BRAND TEST"
+            },
+            "createdTime": "2021-07-13T15:16:30.000Z"
+        }
+    ],
+    "offset": "rec6QUnp2K3GJV8px"
+}
+```
 
 #### MVP 
 1. use postman to observe that the airtable api is working
@@ -79,11 +97,11 @@ Here is my wireframe for the website. its modeled after a phone display
 | Total | N/A |46 hrs| 0 hrs | N/A hrs |
 ## SWOT Analysis
 
-### Strengths:
+### Strengths: I think my greatest strength is to be able to plan my process throughly with pseudocode. This helps me organize my thoughts and included everything i know i'll need so i dont get distracted adding features at the last minute. As well as learning being able to search online and my own notes for what i need when i encounter problems regarding error messages. Alot of what we did to implementing certain features happened in class so i feel confident in implementing certain features like routes and forms.
 
-### Weaknesses:
+### Weaknesses: the rating system i had in mind might be a roadblock for me because i havent decided if i should settle doing ratings for numbers 1-5 or stars 1-5. Another roadblock i think i'll have trouble with is getting certain information to carry over in the shopping cart as well as implementing a shopping cart thats as close to one thats use on sites like amazon.
 
-### Opportunities:
+### Opportunities: utlizing my notes from the audubon hw, music and recipe app should give me an idea of how i should structure this website. figuring out how to implement thereact shopping cart npm features might help alot but wont use unless i decided its necessary to use it. I can also ask for advice during TA hours and use issue tickets when a big problem arise.
 
-### Threats:# 
+### Threats:# My greatest weakness is taking too much time implementing something whether its fixing errors or a new feature then only realizing later i didnt make real progress with my work. In situations where if im stuck i shoould ask for assistance i rather learn to fix it myself than have someone do it for me. Its a habit im trying to break away from.
 
