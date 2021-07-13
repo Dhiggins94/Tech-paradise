@@ -12,15 +12,15 @@ The user will be able to select from a category of items such as computers, keyb
 
 Here is my wireframe for the website. its modeled after a phone display
 
-![WireFrame for website](https://i.imgur.com/MftL8vS.png "its wireframe of the website built for phone first")
+![WireFrame for website](https://i.imgur.com/ukviGHb.png "its wireframe of the website built for phone first")
 
 ## Component Hierarchy
 
-![Component hierarchy for website](https://i.imgur.com/cCq5ytq.png " this is the component hierarchy  of the website")
+![Component hierarchy for website](https://i.imgur.com/1MHGbez.png " this is the component hierarchy  of the website")
 
 
 ## API and Data Sample
-
+Airtable 1
 ```{
     "records": [
         {
@@ -28,17 +28,39 @@ Here is my wireframe for the website. its modeled after a phone display
             "fields": {
                 "productDescription": "DESCRIPTION TEST",
                 "category ": "laptop TEST",
-                "reviews": "REVIEW TEST",
                 "name": "name TEST",
                 "image": "https://nzxt.com/assets/cms/34299/1618960827-elite5grid.png?auto=format&fit=max&h=900&w=900",
-                "rating": 3,
                 "price": 100,
                 "Brand": "BRAND TEST"
             },
             "createdTime": "2021-07-13T15:16:30.000Z"
+        },
+        {
+            "id": "rec0twliKFnDYNJEO",
+            "fields": {},
+            "createdTime": "2021-07-13T20:52:17.000Z"
         }
     ],
-    "offset": "rec6QUnp2K3GJV8px"
+    "offset": "rec0twliKFnDYNJEO"
+}
+```
+AirTable 2
+```
+{
+    "records": [
+        {
+            "id": "recwZpLjs2zGloXQ6",
+            "fields": {
+                "name": "name test",
+                "review": [
+                    "recqne23kjuv12fXN"
+                ],
+                "rating": 2
+            },
+            "createdTime": "2021-07-13T20:50:00.000Z"
+        }
+    ],
+    "offset": "recwZpLjs2zGloXQ6"
 }
 ```
 
@@ -51,13 +73,15 @@ Here is my wireframe for the website. its modeled after a phone display
 6. pressing a category should give items of that category. example (pressing mouses, should show any mouses avaliable).
 7. item should show infomation like its price, brief description and the ability to put it in a shopping cart.
 8. items that are in the shopping cart should also have the ability to be removed from said shopping cart
-9. pressing review should take you to a form which then should let you give it a select item,give it a rating and a place to input text along with a submit button.
+9. pressing review should take you to a form which then should let you give it a select item,give it a rating and a place to input text along with a submit button as well as edit and delete your review.
 10. pressing shopping should also take you directly to your shopping cart.
+11. style with flexbox and add media queries.
 
 #### PostMVP  
 1. show a quantity of items in your shopping cart, individual and in total.
 2. show a total price of all items in the shopping cart.
 3. when selecting an item to go to your shopping cart, show reviews of that item if any was made.
+4. style with css grid
 
 ## Project Schedule
 
@@ -88,7 +112,7 @@ Here is my wireframe for the website. its modeled after a phone display
 | implement item selection to show info of the item (price for example)| H | 3 hrs| N/A hrs | N/A hrs |
 | implement buttons to take items that are displayed into the shopping cart | H | 3 hrs| N/A hrs | N/A hrs |
 | implement shopping cart to display the item and a button to delete items in shopping cart  | H | 3 hrs| N/A hrs | N/A hrs |
-| Advance styling for css(flexbox)(grid) | M | 3 hrs| N/A hrs | N/A hrs |
+| Advance styling for css(flexbox) or (grid) | M | 3 hrs| N/A hrs | N/A hrs |
 | Using media queries for phones/desktops | M | 3 hrs| N/A hrs | N/A hrs |
 | Checking for errors in react syntax | H | 3 hrs| N/A hrs | N/A hrs |
 | Checking for errors in CSS styling | M | 3 hrs| N/A hrs | N/A hrs |
