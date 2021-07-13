@@ -6,7 +6,7 @@ Tech-Paradise
 
 ## Project Description
 
-The user will be able to select from a category of items such as computers, keyboards, mouses, etc. and be able to put them in a shopping cart. 
+The user will be able to select from a category of items such as computers, keyboards, mouses, etc. and be able to put them in a shopping cart. Users should be able to leave reviews about their products of choice 
 
 ## Wireframes
 
