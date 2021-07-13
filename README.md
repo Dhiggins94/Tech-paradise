@@ -16,7 +16,7 @@ Here is my wireframe for the website. its modeled after a phone display
 
 ## Component Hierarchy
 
-![Component hierarchy for website](https://i.imgur.com/MftL8vS.png " this is the component hierarchy  of the website")
+![Component hierarchy for website](https://i.imgur.com/cCq5ytq.png " this is the component hierarchy  of the website")
 
 
 ## API and Data Sample
