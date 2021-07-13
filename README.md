@@ -6,11 +6,12 @@ Tech-Paradise
 
 ## Project Description
 
-The user should be able to select from a category of items such as computers, keyboards, mouses, etc. and be able to put them in a shopping cart. 
+The user will be able to select from a category of items such as computers, keyboards, mouses, etc. and be able to put them in a shopping cart. 
 
 ## Wireframes
 
 
+![WireFrame for website](https://i.imgur.com/YZbjsSs.png" its wireframe of the website built for phone first")
 
 ## Component Hierarchy
 
