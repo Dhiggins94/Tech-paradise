@@ -29,7 +29,7 @@ Here is my wireframe for the website. its modeled after a phone display
 2. create react app and install anything else needed like axios
 3. test render data from airtable as proof information can be displayed
 4. have options to go to shopping cart,home,reviews, and inventory 
-5. 5. have inventory display show categories of different kind of items
+5. have inventory display show categories of different kind of items
 6. pressing a category should give items of that category. example (pressing mouses, should show any mouses avaliable.
 7. item should show infomation like its price, brief description , and the ability to put it in a shopping cart.
 8.items that are in the shopping cart should also have the ability to be removed from said shopping cart
@@ -60,19 +60,23 @@ Here is my wireframe for the website. its modeled after a phone display
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Getting the API rendering data | M | 1 hrs| 2 hrs | N/A hrs |
-| writing Pseudocode | M| 1 hrs| 1 hrs | N/A hrs |
-| Setting up the html and css | H | 3hrs| 3 hrs | N/A hrs |
-| Get functionality on the about me | L | 2 hrs| .5 hrs | N/A hrs |
-| Get functionality on the buttons | H | 3hrs| 3 hrs | N/A hrs |
-| Get the API to iterate random heroes/villian by button | H| 3 hrs| 8 hrs | N/A hrs |
-| Advance styling for css(flexbox) | H | 3 hrs| 2 hrs | N/A hrs |
-| Using media queries for phones/desktops | H | 3 hrs| 2 hrs | N/A hrs |
-| Checking for errors in javascript | H | 3 hrs| 5 hrs | N/A hrs |
-| Checking for errors in CSS styling | H | 3 hrs| 3 hrs | N/A hrs |
-| Deploy the website, get it peered review | L | 2 hrs| 1 hrs | N/A hrs |
-| Practice presnetation | L | 2 hrs| 2 hrs | N/A hrs |
-| Total | N/A |0 hrs| 0 hrs | N/A hrs |
+| Getting the API rendering data | M | 3 hrs| N/A hrs | N/A hrs |
+| writing Pseudocode | H| 3 hrs| N/A hrs | N/A hrs |
+| Setting up the react folder structure| H | 3hrs| N/A hrs | N/A hrs |
+| Get functionality on routes(inventory ,shopping-cart etc)| H | 3hrs| N/A hrs | N/A hrs |
+| Get the Airtable to display testData | H| 3 hrs| N/A hrs | N/A hrs |
+| Check Airtable for any corrections that need to be made| H| 3 hrs| N/A hrs | N/A hrs |
+| implement site with working catergory buttons | H | 3 hrs| N/A hrs | N/A hrs |
+| implement item selection to show info of the item (price for example)| H | 3 hrs| N/A hrs | N/A hrs |
+| implement buttons to take items that are displayed into the shopping cart | H | 3 hrs| N/A hrs | N/A hrs |
+| implement shopping cart to display the item and a button to delete items in shopping cart  | H | 3 hrs| N/A hrs | N/A hrs |
+| Advance styling for css(flexbox)(grid) | M | 3 hrs| N/A hrs | N/A hrs |
+| Using media queries for phones/desktops | M | 3 hrs| N/A hrs | N/A hrs |
+| Checking for errors in react syntax | H | 3 hrs| N/A hrs | N/A hrs |
+| Checking for errors in CSS styling | M | 3 hrs| N/A hrs | N/A hrs |
+| Deploy the website, ask for help using error tickets| L | 2 hrs| N/A hrs | N/A hrs |
+| Practice presnetation | L | 2 hrs| N/A hrs | N/A hrs |
+| Total | N/A |46 hrs| 0 hrs | N/A hrs |
 ## SWOT Analysis
 
 ### Strengths:
