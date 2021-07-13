@@ -30,29 +30,29 @@ Here is my wireframe for the website. its modeled after a phone display
 3. test render data from airtable as proof information can be displayed
 4. have options to go to shopping cart,home,reviews, and inventory 
 5. have inventory display show categories of different kind of items
-6. pressing a category should give items of that category. example (pressing mouses, should show any mouses avaliable.
-7. item should show infomation like its price, brief description , and the ability to put it in a shopping cart.
-8.items that are in the shopping cart should also have the ability to be removed from said shopping cart
+6. pressing a category should give items of that category. example (pressing mouses, should show any mouses avaliable).
+7. item should show infomation like its price, brief description and the ability to put it in a shopping cart.
+8. items that are in the shopping cart should also have the ability to be removed from said shopping cart
 9. pressing review should take you to a form which then should let you give it a select item,give it a rating and a place to input text along with a submit button.
 10. pressing shopping should also take you directly to your shopping cart.
 
 #### PostMVP  
-1.show a quantity of items in your shopping cart, individual and in total
+1. show a quantity of items in your shopping cart, individual and in total.
 2. show a total price of all items in the shopping cart.
-3. when selecting an item to go to your shopping cart, show reviews of that item if any was made
+3. when selecting an item to go to your shopping cart, show reviews of that item if any was made.
 
 ## Project Schedule
 
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|July 12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |July 13| Project Approval | Incomplete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|July 14-15| Pseudocode / actual code | Incomplete
+|July 15-16| Initial Clickable Model  | Incomplete
+|July 19| MVP | Incomplete
+|July 20| Presentations | Incomplete
 
 ## Timeframes
 
