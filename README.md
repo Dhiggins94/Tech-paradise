@@ -21,7 +21,8 @@ Here is my wireframe for the website. its modeled after a phone display
 
 ## API and Data Sample
 Airtable 1
-```{
+```
+{
     "records": [
         {
             "id": "rec6QUnp2K3GJV8px",
@@ -31,17 +32,34 @@ Airtable 1
                 "name": "name TEST",
                 "image": "https://nzxt.com/assets/cms/34299/1618960827-elite5grid.png?auto=format&fit=max&h=900&w=900",
                 "price": 100,
-                "Brand": "BRAND TEST"
+                "Brand": "BRAND TEST",
+                "rating": 3,
+                "review": "review test"
             },
             "createdTime": "2021-07-13T15:16:30.000Z"
         },
         {
-            "id": "rec0twliKFnDYNJEO",
-            "fields": {},
-            "createdTime": "2021-07-13T20:52:17.000Z"
+            "id": "recKSveQWfmLsiMPV",
+            "fields": {
+                "name": "review test",
+                "Table 2": [
+                    "recwZpLjs2zGloXQ6"
+                ]
+            },
+            "createdTime": "2021-07-13T21:43:35.000Z"
+        },
+        {
+            "id": "recdHdS7jzRXYzPjG",
+            "fields": {
+                "name": "2",
+                "Table 2 (2)": [
+                    "recwZpLjs2zGloXQ6"
+                ]
+            },
+            "createdTime": "2021-07-13T21:43:52.000Z"
         }
     ],
-    "offset": "rec0twliKFnDYNJEO"
+    "offset": "recdHdS7jzRXYzPjG"
 }
 ```
 AirTable 2
@@ -53,9 +71,11 @@ AirTable 2
             "fields": {
                 "name": "name test",
                 "review": [
-                    "recqne23kjuv12fXN"
+                    "recKSveQWfmLsiMPV"
                 ],
-                "rating": 2
+                "rating": [
+                    "recdHdS7jzRXYzPjG"
+                ]
             },
             "createdTime": "2021-07-13T20:50:00.000Z"
         }
