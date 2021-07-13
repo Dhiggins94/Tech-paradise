@@ -10,6 +10,7 @@ The user will be able to select from a category of items such as computers, keyb
 
 ## Wireframes
 
+Here is my wireframe for the website. its modeled after a phone display
 
 ![WireFrame for website](https://i.imgur.com/YZbjsSs.png "its wireframe of the website built for phone first")
 
