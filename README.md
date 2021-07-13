@@ -6,7 +6,7 @@ Tech-Paradise
 
 ## Project Description
 
-The user will be able to select from a category of items such as computers, keyboards, mouses, etc. and be able to put them in a shopping cart. Users should be able to leave reviews about their products of choice 
+The user will be able to select from a category of items such as computers, keyboards, mouses, etc. Users should be able to leave reviews about their products of choice 
 
 ## Wireframes
 
@@ -88,10 +88,10 @@ AirTable 2
 1. use postman to observe that the airtable api is working
 2. create react app and install anything else needed like axios
 3. test render data from airtable as proof information can be displayed
-4. have options to go to shopping cart,home,reviews, and inventory 
+4. have options to go to home,reviews, and inventory 
 5. have inventory display show categories of different kind of items
 6. pressing a category should give items of that category. example (pressing mouses, should show any mouses avaliable).
-7. item should show infomation like its price, brief description and the ability to put it in a shopping cart.
+7. item should show infomation like its price, brief description.
 8. items that are in the shopping cart should also have the ability to be removed from said shopping cart
 9. pressing review should take you to a form which then should let you give it a select item,give it a rating and a place to input text along with a submit button as well as edit and delete your review.
 10. pressing shopping should also take you directly to your shopping cart.
@@ -102,6 +102,7 @@ AirTable 2
 2. show a total price of all items in the shopping cart.
 3. when selecting an item to go to your shopping cart, show reviews of that item if any was made.
 4. style with css grid
+5. 5.create shopping cart
 
 ## Project Schedule
 
