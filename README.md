@@ -11,7 +11,7 @@ The user will be able to select from a category of items such as computers, keyb
 ## Wireframes
 
 
-![WireFrame for website](https://i.imgur.com/YZbjsSs.png" its wireframe of the website built for phone first")
+![WireFrame for website](https://i.imgur.com/YZbjsSs.png "its wireframe of the website built for phone first")
 
 ## Component Hierarchy
 
