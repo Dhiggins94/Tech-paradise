@@ -27,39 +27,50 @@ Airtable 1
         {
             "id": "rec6QUnp2K3GJV8px",
             "fields": {
-                "productDescription": "DESCRIPTION TEST",
-                "category ": "laptop TEST",
-                "name": "name TEST",
-                "image": "https://nzxt.com/assets/cms/34299/1618960827-elite5grid.png?auto=format&fit=max&h=900&w=900",
                 "price": 100,
+                "category ": "laptop TEST",
                 "Brand": "BRAND TEST",
-                "rating": 3,
-                "review": "review test"
+                "productDescription": "DESCRIPTION TEST",
+                "image": "https://nzxt.com/assets/cms/34299/1618960827-elite5grid.png?auto=format&fit=max&h=900&w=900",
+                "review": [
+                    "recwZpLjs2zGloXQ6"
+                ],
+                "name": "nzxt "
             },
             "createdTime": "2021-07-13T15:16:30.000Z"
         },
         {
-            "id": "recKSveQWfmLsiMPV",
+            "id": "recNGDcV46iAuzXd2",
             "fields": {
-                "name": "review test",
-                "Table 2": [
-                    "recwZpLjs2zGloXQ6"
+                "name": "msi-stealth-pro",
+                "price": 600,
+                "category ": "laptop",
+                "Brand": "msi",
+                "productDescription": "whole lot of cpu",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/71eMjQPRKoL._AC_SL1500_.jpg",
+                "review": [
+                    "recuRuK0mxCmVTwQ4"
                 ]
             },
-            "createdTime": "2021-07-13T21:43:35.000Z"
+            "createdTime": "2021-07-13T23:08:24.000Z"
         },
         {
-            "id": "recdHdS7jzRXYzPjG",
+            "id": "recCXOK88JhaX4mXY",
             "fields": {
-                "name": "2",
-                "Table 2 (2)": [
-                    "recwZpLjs2zGloXQ6"
+                "name": "macbook",
+                "price": 1200,
+                "category ": "laptop",
+                "Brand": "mac",
+                "productDescription": "expensive but good-ish",
+                "image": "https://cdn.freebiesbug.com/wp-content/uploads/2014/02/macbook-pro-psd-mockup-580x400.jpg",
+                "review": [
+                    "rect1FAo7HnnKMs3a"
                 ]
             },
-            "createdTime": "2021-07-13T21:43:52.000Z"
+            "createdTime": "2021-07-13T23:49:37.000Z"
         }
     ],
-    "offset": "recdHdS7jzRXYzPjG"
+    "offset": "recCXOK88JhaX4mXY"
 }
 ```
 AirTable 2
@@ -69,18 +80,38 @@ AirTable 2
         {
             "id": "recwZpLjs2zGloXQ6",
             "fields": {
-                "name": "name test",
-                "review": [
-                    "recKSveQWfmLsiMPV"
+                "name": "review",
+                "Table 1": [
+                    "rec6QUnp2K3GJV8px"
                 ],
-                "rating": [
-                    "recdHdS7jzRXYzPjG"
-                ]
+                "Rating": 4,
+                "review": "its really good i like it"
             },
             "createdTime": "2021-07-13T20:50:00.000Z"
+        },
+        {
+            "id": "recxzwHRx4TuNiGXX",
+            "fields": {
+                "name": "rating",
+                "Rating": 2,
+                "review": "its really bad i dont like it"
+            },
+            "createdTime": "2021-07-13T23:25:01.000Z"
+        },
+        {
+            "id": "rect1FAo7HnnKMs3a",
+            "fields": {
+                "Table 1": [
+                    "recCXOK88JhaX4mXY"
+                ],
+                "name": "macbook",
+                "review": "its ok i guess",
+                "Rating": 2
+            },
+            "createdTime": "2021-07-13T23:54:28.000Z"
         }
     ],
-    "offset": "recwZpLjs2zGloXQ6"
+    "offset": "rect1FAo7HnnKMs3a"
 }
 ```
 
