@@ -3,12 +3,12 @@ import React from 'react'
 import PulseLoader from "react-spinners/PulseLoader";
 import { useState, useEffect } from 'react'
 import axios from 'axios';
+import TechInfo from './TechInfo';
 
 // airtable, urls, and others go here
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
 const PRODUCT_BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/products`
-//const REVIEW_BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/reviews`
  const headers = { Authorization: `Bearer ${AIRTABLE_KEY}` }
 
 export default function InventoryCatergory() {
@@ -33,10 +33,9 @@ if (inventory.length === 0) {
   return (
     <>
       {inventory.map((product) => {
-        return (
-         
-          <h3>{product.fields.name}</h3>
-        )
+        
+        return <TechInfo product={product} />
+        
       })}
     </>
   )
