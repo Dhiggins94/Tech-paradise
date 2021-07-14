@@ -1,0 +1,39 @@
+step 1. make react app {done}
+
+step 2. add browser router to your index.js file {done}
+
+step 3. make an env development local {done}
+
+step 4. look into implementing localstorage 
+(https://blog.logrocket.com/localstorage-javascript-complete-guide/) 
+info2 {https://programmingwithmosh.com/react/localstorage-react/}{done}
+
+step 5.make a services folder and put your airtable key,base, base url and headers then export them{wip}
+
+step 6. start making jsx files for the components you need. fill them out when your ready to put data in{}
+
+step 7. do not forget to seperate things into catergory's because once PRESSED should display all the items (consider putting them in the home page or link them to inventory and have the inventory page with catergory's){}
+
+step 8. do not forget we need to go to the app.js to build out the router info.
+
+here is the things are table 1 is pulling.
+
+price: number #
+catergory: "String"
+brand: "string"
+productDescription: "string"
+image: url Link
+
+
+here is the thing table 2 should be pulling
+review: "string"
+ratings: number, maybe npm library  
+LINK: "https://www.npmjs.com/package/react-star-ratings"     LINK:  https://www.npmjs.com/package/react-rating-stars-component
+
+
+url:  
+table 1
+`https://api.airtable.com/v0/${base}/products`
+
+table 2
+`https://api.airtable.com/v0/${base}/reviews`
