@@ -3,8 +3,9 @@ import axios from "axios"
 import { REVIEW_BASE_URL, headers } from "../services"
 
 export default function AddForm() {
-const defaultForm = {name: "", review: "", rating: "",      product:""}
+const defaultForm = {name: "", review: "", rating: "", product:"",}
   const [input, setInput] = useState(defaultForm)
+ 
   const handleChange = (event) => {
     const { name, value } = event.target;
 
@@ -20,6 +21,9 @@ const defaultForm = {name: "", review: "", rating: "",      product:""}
     console.log(response)
 }
 
+  
+  
+  
   return (
     <div>
       <h3>post a new review</h3>
@@ -31,7 +35,7 @@ const defaultForm = {name: "", review: "", rating: "",      product:""}
         <input name="review" value={input.review} onChange={handleChange} placeholder=" write your review"/>
         <br />
         <label> rating</label>
-        <input name="rating"value={rating} onChange={ handleChange} placeholder="give a rating from 1-5"/>
+        <input name="rating" value={input.rating} onChange={ handleChange} placeholder="give a rating from 1-5"/>
         <label> product</label>
         <input name="product"value={input.product} onChange={handleChange} placeholder="write the products name"/>
         <br />

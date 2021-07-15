@@ -14,14 +14,13 @@ function App() {
       </Route>
       <Route exact path="/inventory">
         <ListItems />
-        <Route exact path="/add-form">
-        <AddForm />
-      </Route>
       </Route>
       <Route path="/product/:id">
         <TechInformation />
       </Route>
-     
+      <Route exact path="/add-form">
+        <AddForm />
+      </Route>
       <Footer />
     </div>
   );
