@@ -10,37 +10,27 @@ const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
 const REVIEW_BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/reviews`
 const headers = { Authorization: `Bearer ${AIRTABLE_KEY}` }
 
-const fields = {
-  name: "",
-  review: "",
-  rating: "" ,
-}
+
 export default function Form() {
   // this is everything inside table 2
-  const [input, setInput] = useState(fields)
+  const [review, setReview] = useState("")
+  const [rating, setRating] = useState("")
+
   const history = useHistory()
-
-  const handleChange = (event) => {
-    const {name, value} = event.target
-    setInput((prevInput) => ({
-      ...prevInput,
-      [name]: value,
-    }))
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    const fields = {
+      review, rating
+    }
   }
+  const res = await axios.post(REVIEW_BASE_URL, { fields }, {headers})
+  setReview("")
+  history.push(`/product/${res.data.id}`)
+  
 
-
-   const handleSubmit = async (event) => {
-    event.preventDefault();
-    const res = await axios.post(REVIEW_BASE_URL,
-      { fields: input}, { headers })
-    console.log(res)
-    setReview("")
-    history.push("/inventory")
-
-  }
   return (
     <div>
-      <h2> post your reviews</h2>
+      post your reviews
       <form onSubmit={handleSubmit}>
         <label>your name</label>
         <br />
@@ -65,7 +55,7 @@ export default function Form() {
           color2={'#ffd700'}
         />
         <br />
-        <Button> Submit Review</Button>
+        <button>submit review</button>
       </form>
     </div>
   )

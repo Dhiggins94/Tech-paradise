@@ -6,7 +6,7 @@ export default function Navbar() {
       <nav>
         <Link to="/"><h2> Home</h2></Link>
         <h1>Tech-Paradise</h1>
-      <Link to="/inventory">List of all electronics </Link>
+        <Link to="/inventory">List of all electronics </Link >
       </nav>
     </div>
   )
