@@ -25,7 +25,7 @@ export default function AddForm() {
     const response = await axios.post(REVIEW_BASE_URL, {fields}, { headers })
     console.log(response)
     setName("")
-    history.push(`/inventory/${res.data.id}`)
+    history.push(`/inventory/${response.data.id}`)
 
   }
   return (
