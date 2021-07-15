@@ -8,7 +8,6 @@ import {ReactStars} from "react-rating-stars-component";
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
 const REVIEW_BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/reviews`
-// const PRODUCT_BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/products`
 const headers = { Authorization: `Bearer ${AIRTABLE_KEY}` }
 
 const fields = {
@@ -16,13 +15,13 @@ const fields = {
   review: "",
   rating: "" ,
 }
-export default function Form(fields) {
+export default function Form() {
   // this is everything inside table 2
   const [input, setInput] = useState(fields)
   const history = useHistory()
 
+
   const handleChange = (event) => {
-  
     const {name, value} = event.target
     setInput((prevInput) => ({
       ...prevInput,
@@ -37,7 +36,7 @@ export default function Form(fields) {
       { fields: input}, { headers })
     console.log(res)
     setReview("")
-    history.push(`/inventory/`)
+    history.push("/inventory")
 
   }
 
@@ -46,6 +45,7 @@ export default function Form(fields) {
       <h2> post your reviews</h2>
       <form onSubmit={handleSubmit}>
         <label>your name</label>
+        <br />
         <input name="name"
           value={input.name}
           onChange={handleChange}
@@ -53,8 +53,11 @@ export default function Form(fields) {
           />
           <br />
         <label> review section</label>
-        <input type="text" value={review}
-          onChange={handleChange} />
+        <input type="text"
+          value={review}
+          onChange={handleChange}
+          placeholder="Your reviews goes here"
+          />
         <br />
         <label>Rating</label>
         <ReactStars count={5}
