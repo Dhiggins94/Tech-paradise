@@ -3,15 +3,15 @@ import React from 'react'
 import PulseLoader from "react-spinners/PulseLoader";
 import { useState, useEffect } from 'react'
 import axios from 'axios';
-import TechInfo from './TechInfo';
-
-// airtable, urls, and others go here
+import Tech from './Tech';
+// import{ PRODUCT_BASE_URL, headers} from "..services/"
+ // airtable, urls, and others go here
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
 const PRODUCT_BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/products`
  const headers = { Authorization: `Bearer ${AIRTABLE_KEY}` }
 
-export default function InventoryCatergory() {
+export default function ListItems() {
   const [inventory, setInventory] = useState([])  
 // my product render
   useEffect(() => {
@@ -34,9 +34,15 @@ if (inventory.length === 0) {
     <>
       {inventory.map((product) => {
         
-        return <TechInfo product={product} />
+        return <Tech key={ product.id}product={product} />
         
       })}
     </>
   )
 }
+// filter.jsx
+ // inventory.filter((product) =>{
+// product.fields.catergory === desktop
+// })
+
+// this maps out data for the LIST OF ALL ITEMS 

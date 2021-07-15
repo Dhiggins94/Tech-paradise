@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import InventoryCatergory from './components/InventoryCatergory';
+import ListItems from './components/ListItems';
 import { Route } from "react-router-dom"
+import TechInformation from './components/TechInformation';
 
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
         Home and welcome
       </Route>
       <Route exact path="/inventory">
-      <InventoryCatergory />
+        <ListItems />
+      </Route>
+      <Route path="/product/:id">
+        <TechInformation />
       </Route>
       <Footer />
     </div>

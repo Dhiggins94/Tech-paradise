@@ -1,13 +1,22 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 
-export default function TechInfo(props) {
+export default function Tech({ product }) {
+  const{id,fields} = product
   return (
+    
+    <Link to={`/product/${id}`} >
     <>
-      <h3>{props.product.fields.name}</h3>
-     <img src={props.product.fields.image} alt="pictures" />
-    </>
+        <h3>{fields.name}</h3>
+       <img src={fields.image} alt="pictures" />
+      </>
+    </Link>
+    
   )
-}
+ }
+// <img src={fields.image} alt="pictures" />
+// <h4>{fields.brand} </h4>
+// <p> {fields.productDescription} </p>
 
 // we are getting data from table one to display to the DOM
 // the next step going forward is to continue going through displaying things fromt the first table when item is clicked
