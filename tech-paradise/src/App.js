@@ -5,7 +5,6 @@ import ListItems from './components/ListItems';
 import { Route } from "react-router-dom"
 import TechInformation from './components/TechInformation';
 import ReactStars from "react-rating-stars-component";
-import EditForm from "./components/EditForm"
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
         <TechInformation />
       </Route>
       <Route path="/reviews">
-      <EditForm />
         <ReactStars />
       </Route>
       <Footer />
