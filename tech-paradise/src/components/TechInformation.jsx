@@ -11,11 +11,14 @@ const PRODUCT_BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/products`
 const REVIEW_BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/reviews`
 const headers = { Authorization: `Bearer ${AIRTABLE_KEY}` }
 
-
+const forms = {
+  name: "",
+  review: ""
+}
 export default function TechInformation() {
   const [device, setDevice] = useState({})
   const { id } = useParams()
-  const [input, setInput] = useState("")
+  const [input, setInput] = useState(forms)
 
 // handles table 1 axios call
   useEffect(() => {
