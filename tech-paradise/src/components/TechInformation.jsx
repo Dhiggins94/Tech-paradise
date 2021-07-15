@@ -19,6 +19,7 @@ export default function TechInformation() {
   const [device, setDevice] = useState({})
   const { id } = useParams()
   const [input, setInput] = useState(forms)
+  const history = useHistory()
 
 // handles table 1 axios call
   useEffect(() => {
@@ -31,7 +32,7 @@ export default function TechInformation() {
   }, [id])
 
 // the handlechange and submit function
-  const history = useHistory()
+  
   const handleChange = (event) => {
     const { name, value } = event.target;
     setInput((prevInput) => ({
@@ -39,18 +40,14 @@ export default function TechInformation() {
       [name]: value,
     }));
   };
-
+// POST for the 2nd table
   const handleSubmit = async (event) => {
-    event.preventDefault()
-    const fields = {
-      review, rating
-    }
-    // table two section and post call
-    const res = await axios.post(REVIEW_BASE_URL, { fields }, { headers })
-    setReview("")
-    history.push(`/product/${res.data.id}`)
-  
-  }
+    event.preventDefault();
+    const res = await axios.post(REVIEW_BASE_URL, { fields: input }, { headers });
+    console.log(res);
+    history.push(`/product/${id}`)
+  };
+    
   return (
     <div>
       {/* throws data on page */}
