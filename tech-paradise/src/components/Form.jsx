@@ -20,7 +20,6 @@ export default function Form() {
   const [input, setInput] = useState(fields)
   const history = useHistory()
 
-
   const handleChange = (event) => {
     const {name, value} = event.target
     setInput((prevInput) => ({
@@ -39,7 +38,6 @@ export default function Form() {
     history.push("/inventory")
 
   }
-
   return (
     <div>
       <h2> post your reviews</h2>
@@ -54,13 +52,14 @@ export default function Form() {
           <br />
         <label> review section</label>
         <input type="text"
-          value={review}
+          value={input.review}
           onChange={handleChange}
           placeholder="Your reviews goes here"
           />
         <br />
         <label>Rating</label>
         <ReactStars count={5}
+          value={input.rating}
           onChange={handleChange}
           size={24}
           color2={'#ffd700'}
