@@ -4,7 +4,8 @@ export default function Navbar() {
   return (
     <div>
       <nav>
-      <Link to="/"><h1> Tech-Paradise</h1></Link>
+        <Link to="/"><h2> Home</h2></Link>
+        <h1>Tech-Paradise</h1>
       <Link to="/inventory">List of all electronics </Link>
       </nav>
     </div>
