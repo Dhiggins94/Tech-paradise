@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import ListItems from './components/ListItems';
 import { Route } from "react-router-dom"
 import TechInformation from './components/TechInformation';
-import ReactStars from "react-rating-stars-component";
+import AddForm from './components/AddForm';
 
 function App() {
   return (
@@ -14,13 +14,14 @@ function App() {
       </Route>
       <Route exact path="/inventory">
         <ListItems />
+        <Route exact path="/add-form">
+        <AddForm />
+      </Route>
       </Route>
       <Route path="/product/:id">
         <TechInformation />
       </Route>
-      <Route path="/reviews">
-        <ReactStars />
-      </Route>
+     
       <Footer />
     </div>
   );

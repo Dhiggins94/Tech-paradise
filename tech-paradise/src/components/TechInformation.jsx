@@ -3,7 +3,7 @@ import { useEffect,useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router'
 // import { useHistory } from "react-router";
-import StarRating from 'react-star-rating'
+// import StarRating from 'react-star-rating'
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
@@ -13,12 +13,12 @@ const headers = { Authorization: `Bearer ${AIRTABLE_KEY}` }
 
 export default function TechInformation() {
   const [device, setDevice] = useState({})
-  const [ratings, setRatings] = useState([])
   const [allReviews, setAllReviews] = useState([])
   const [productReviews, setProductReviews] = useState([])
+  
+  // for the form
   const { id } = useParams()
-  // const [input, setInput] = useState(forms)
-  // const history = useHistory()
+  
 
 // handles table 1 axios  get call
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function TechInformation() {
       const res = await axios.get(deviceURL, { headers })
       setDevice(res.data)
     }
-    // handles table 1 axios get call
+    // handles table 2 axios get call
     const fetchAllReviews = async () => {
       const reviewTable = `${REVIEW_BASE_URL}`
       const response = await axios.get(reviewTable, { headers })
@@ -51,9 +51,10 @@ export default function TechInformation() {
       }
     }, [id,allReviews])
   const reviewsJSX = productReviews.map((review) => {
-    <p> { review.fields.name} </p>
-    })
-  
+    <p> {review.fields.name} </p>
+  })
+
+  // handle submit for form
 
     
   return (
@@ -63,11 +64,12 @@ export default function TechInformation() {
       <img src={device.fields?.image} alt="item" />
       <p>{device.fields?.productDescription}</p>
       <p>{device.fields?.price}</p>
+
       {/* maps through the 2nd table */}
       {productReviews.map(review => (
         <p> rating {review.fields.rating} out of 5 review: {review.fields.review} </p>
       ))}
-     
+
     </div>
   )
 }

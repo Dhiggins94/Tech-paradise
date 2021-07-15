@@ -44,5 +44,4 @@ if (inventory.length === 0) {
  // inventory.filter((product) =>{
 // product.fields.catergory === desktop
 // })
-
 // this maps out data for the LIST OF ALL ITEMS 
