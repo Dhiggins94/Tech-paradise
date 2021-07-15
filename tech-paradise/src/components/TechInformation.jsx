@@ -51,9 +51,9 @@ export default function TechInformation() {
       }
     }, [id,allReviews])
   const reviewsJSX = productReviews.map((review) => {
-    <p> {review.fields.name} </p>
+   return  <p> {review.fields.name} </p>
   })
-
+console.log(reviewsJSX)
   // handle submit for form
 
     

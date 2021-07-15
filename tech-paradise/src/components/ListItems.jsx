@@ -4,8 +4,7 @@ import PulseLoader from "react-spinners/PulseLoader";
 import { useState, useEffect } from 'react'
 import axios from 'axios';
 import Tech from './Tech';
-// import{ PRODUCT_BASE_URL, headers} from "..services/"
- // airtable, urls, and others go here
+
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
 const PRODUCT_BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/products`
@@ -34,8 +33,10 @@ if (inventory.length === 0) {
     <>
       {inventory.map((product) => {
         
-        return <Tech key={ product.id}product={product} />
-        
+        return (
+          
+          <Tech key={product.id} product={product} />
+        )
       })}
     </>
   )
