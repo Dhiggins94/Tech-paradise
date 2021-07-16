@@ -18,7 +18,7 @@ function App() {
       <Route path="/product/:id">
         <TechInformation />
       </Route>
-      <Route exact path="/add-form">
+      <Route exact path="/add-form/:id">
         <AddForm />
       </Route>
       <Footer />

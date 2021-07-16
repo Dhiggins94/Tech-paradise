@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import axios from "axios"
 import { REVIEW_BASE_URL, headers } from "../services"
 
-export default function AddForm() {
+export default function AddForm(props) {
 // const defaultForm = {name: "", review: "", rating: 0, product:"",}
   const [name, setName] = useState("")
   const [review, setReview] = useState("")
   const [rating, setRating] = useState(0)
-  const [products, setProducts] = useState("")
+  // const [products, setProducts] = useState("")
 
   // const handleChange = (event) => {
   //   const { name, value } = event.target;
@@ -23,11 +23,12 @@ export default function AddForm() {
       name,
       review,
       rating,
-      products,
+      products: [props.productId]
     }
     console.log(fields)
 
     const response = await axios.post(REVIEW_BASE_URL, { fields }, { headers })
+    props.setToggle(prevState => !prevState)
     console.log(response)
 }
 
@@ -46,8 +47,8 @@ export default function AddForm() {
         <br />
         <label> rating</label>
         <input name="rating" type="number" value={rating} onChange={ (e) =>{setRating(e.target.valueAsNumber)}}placeholder="give a rating from 1-5"/>
-        <label> product</label>
-        <input name="products"value={products} onChange={ (e) =>{setProducts(e.target.value)}} placeholder="write the products name"/>
+        {/* <label> product</label>
+        <input name="products"value={products} onChange={ (e) =>{setProducts(e.target.value)}} placeholder="write the products name"/> */}
         <br />
 <button>Submit Review</button>
       </form>

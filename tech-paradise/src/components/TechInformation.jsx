@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect,useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router'
+import AddForm from './AddForm'
 // import { useHistory } from "react-router";
 // import StarRating from 'react-star-rating'
 
@@ -14,7 +15,7 @@ const headers = { Authorization: `Bearer ${AIRTABLE_KEY}` }
 export default function TechInformation() {
   const [device, setDevice] = useState({})
   const [allReviews, setAllReviews] = useState([])
-  const [productReviews, setProductReviews] = useState([])
+  const [toggle, setToggle] = useState(false)
   
   // for the form
   const { id } = useParams()
@@ -28,32 +29,53 @@ export default function TechInformation() {
       setDevice(res.data)
     }
     // handles table 2 axios get call
+    if (id) {
+      fetchDevice()
+    }
+  }, [id])
+  // table 2
+  useEffect(() => {
     const fetchAllReviews = async () => {
       const reviewTable = `${REVIEW_BASE_URL}`
       const response = await axios.get(reviewTable, { headers })
       // setRatings(response.data)
-      setAllReviews(response.data.records)
+      const filteredReviews = response.data.records.filter(review => (
+        review.fields.products[0] === id
+      ))
+      setAllReviews(filteredReviews)
     }
-    fetchDevice()
-    fetchAllReviews()
-  }, [id])
-  
-  useEffect(() => {
-      const fetchProductReviews = async (id) => {
-        const productReviews = allReviews.filter(review => (
-          review.fields.products[0] === id
-        ))
+    if (Object.keys(device).length !== 0 && device.constructor === Object) {
+      fetchAllReviews()
+    }
+}, [device,toggle])
 
-        setProductReviews(productReviews)
-      }
-      if (allReviews.length > 0) {
-        fetchProductReviews(id)
-      }
-    }, [id,allReviews])
-  const reviewsJSX = productReviews.map((review) => {
+
+  // useEffect(() => {
+  //   if (allReviews.length > 0 ) {
+  //     const fetchProductReviews = (id,allReviews) => {
+  //       const productReviews = allReviews.filter(review => (
+  //         review.fields.products[0] === id
+  //       ))
+  //       setProductReviews(productReviews)
+  //     }
+  //     console.log(allReviews)
+  //       fetchProductReviews(id)
+  //       // const productReviews = allReviews.filter(review => (
+  //       //   review.fields.products[0] === id
+  //       //  ))
+  //     }
+  // }, [allReviews])
+  
+  const reviewsJSX = allReviews.map((review) => {
    return  <p> {review.fields.name} </p>
   })
-console.log(reviewsJSX)
+  console.log(reviewsJSX)
+  
+
+
+
+
+
   // handle submit for form
 
     
@@ -64,10 +86,11 @@ console.log(reviewsJSX)
       <img src={device.fields?.image} alt="item" />
       <p>{device.fields?.productDescription}</p>
       <p>{device.fields?.price}</p>
-
+      <AddForm productId={id} setToggle={setToggle} />
       {/* maps through the 2nd table */}
-      {productReviews.map(review => (
+      {allReviews.map(review => (
         <p> rating {review.fields.rating} out of 5 review: {review.fields.review} </p>
+
       ))}
 
     </div>
