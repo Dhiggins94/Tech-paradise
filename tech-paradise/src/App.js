@@ -5,12 +5,14 @@ import ListItems from './components/ListItems';
 import { Route } from "react-router-dom"
 import TechInformation from './components/TechInformation';
 import AddForm from './components/AddForm';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Route exact path="/">
+        <Home />
       </Route>
       <Route exact path="/inventory">
         <ListItems />

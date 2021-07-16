@@ -49,22 +49,6 @@ export default function TechInformation() {
     }
 }, [device,toggle])
 
-
-  // useEffect(() => {
-  //   if (allReviews.length > 0 ) {
-  //     const fetchProductReviews = (id,allReviews) => {
-  //       const productReviews = allReviews.filter(review => (
-  //         review.fields.products[0] === id
-  //       ))
-  //       setProductReviews(productReviews)
-  //     }
-  //     console.log(allReviews)
-  //       fetchProductReviews(id)
-  //       // const productReviews = allReviews.filter(review => (
-  //       //   review.fields.products[0] === id
-  //       //  ))
-  //     }
-  // }, [allReviews])
   
   const reviewsJSX = allReviews.map((review) => {
    return  <p> {review.fields.name} </p>
@@ -83,16 +67,19 @@ export default function TechInformation() {
     <div>
       {/* throws data on page */}
       <h3> {device.fields?.name}  </h3>
+      <br />
       <img src={device.fields?.image} alt="item" />
-      <p>{device.fields?.productDescription}</p>
-      <p>{device.fields?.price}</p>
+      <br />
+      <p> {device.fields?.productDescription}</p>
+      <br />
+      <p> {device.fields?.price}</p>
+      <br />
       <AddForm productId={id} setToggle={setToggle} />
       {/* maps through the 2nd table */}
       {allReviews.map(review => (
-        <p> rating {review.fields.rating} out of 5 review: {review.fields.review} </p>
-
+        <p> name: {review.fields.name} gave a rating {review.fields.rating} out of 5.   review: {review.fields.review} </p>
       ))}
-
+        
     </div>
   )
 }
