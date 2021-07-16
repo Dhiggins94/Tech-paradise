@@ -1,23 +1,33 @@
 import React, { useState } from 'react'
 import axios from "axios"
-import { REVIEW_BASE_URL, headers } from "../services"
+import { PRODUCT_BASE_URL, headers } from "../services"
 
 export default function AddForm() {
-const defaultForm = {name: "", review: "", rating: "", product:"",}
-  const [input, setInput] = useState(defaultForm)
- 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
+// const defaultForm = {name: "", review: "", rating: 0, product:"",}
+  const [name, setName] = useState("")
+  const [review, setReview] = useState("")
+  const [rating, setRating] = useState(0)
+  const [products, setProducts] = useState("")
 
-
-    setInput((prevInput) => ({
-      ...prevInput, [name]: value,
-    }))
-  }
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setInput((prevInput) => ({
+  //     ...prevInput, [name]: value,
+  //   }))
+  // }
   
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await axios.post(REVIEW_BASE_URL, { fields: input }, { headers })
+    
+    const fields = {
+      name,
+      review,
+      rating,
+      products,
+    }
+    console.log(fields)
+
+    const response = await axios.post(PRODUCT_BASE_URL, { fields }, { headers })
     console.log(response)
 }
 
@@ -29,15 +39,15 @@ const defaultForm = {name: "", review: "", rating: "", product:"",}
       <h3>post a new review</h3>
       <form onSubmit={handleSubmit}>
         <label> name</label>
-        <input name="name" value={input.name} onChange={ handleChange} placeholder="put your name"/>
+        <input name="name" value={name} onChange={(e) =>{setName(e.target.value)}} placeholder="put your name"/>
         <br />
         <label>review</label>
-        <input name="review" value={input.review} onChange={handleChange} placeholder=" write your review"/>
+        <input name="review" value={review} onChange={(e) =>{setReview(e.target.value)}} placeholder=" write your review"/>
         <br />
         <label> rating</label>
-        <input name="rating" value={input.rating} onChange={ handleChange} placeholder="give a rating from 1-5"/>
+        <input name="rating" type="number" value={rating} onChange={ (e) =>{setRating(e.target.valueAsNumber)}}placeholder="give a rating from 1-5"/>
         <label> product</label>
-        <input name="product"value={input.product} onChange={handleChange} placeholder="write the products name"/>
+        <input name="products"value={products} onChange={ (e) =>{setProducts(e.target.value)}} placeholder="write the products name"/>
         <br />
 <button>Submit Review</button>
       </form>
