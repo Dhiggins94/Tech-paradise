@@ -3,8 +3,7 @@ import { useEffect,useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router'
 import AddForm from './AddForm'
-// import { useHistory } from "react-router";
-// import StarRating from 'react-star-rating'
+
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
@@ -38,7 +37,6 @@ export default function TechInformation() {
     const fetchAllReviews = async () => {
       const reviewTable = `${REVIEW_BASE_URL}`
       const response = await axios.get(reviewTable, { headers })
-      // setRatings(response.data)
       const filteredReviews = response.data.records.filter(review => (
         review.fields.products[0] === id
       ))
