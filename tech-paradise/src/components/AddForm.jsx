@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from "axios"
-import { PRODUCT_BASE_URL, headers } from "../services"
+import { REVIEW_BASE_URL, headers } from "../services"
 
 export default function AddForm() {
 // const defaultForm = {name: "", review: "", rating: 0, product:"",}
@@ -27,7 +27,7 @@ export default function AddForm() {
     }
     console.log(fields)
 
-    const response = await axios.post(PRODUCT_BASE_URL, { fields }, { headers })
+    const response = await axios.post(REVIEW_BASE_URL, { fields }, { headers })
     console.log(response)
 }
 
