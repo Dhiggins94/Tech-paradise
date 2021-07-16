@@ -123,10 +123,8 @@ AirTable 2
 5. have inventory display show categories of different kind of items
 6. pressing a category should give items of that category. example (pressing mouses, should show any mouses avaliable).
 7. item should show infomation like its price, brief description.
-8. items that are in the shopping cart should also have the ability to be removed from said shopping cart
-9. pressing review should take you to a form which then should let you give it a select item,give it a rating and a place to input text along with a submit button as well as edit and delete your review.
-10. pressing shopping should also take you directly to your shopping cart.
-11. style with flexbox and add media queries.
+8. pressing review should take you to a form which then should let you give it a select item,give it a rating and a place to input text along with a submit button as well as edit and delete your review.
+9. style with flexbox and add media queries.
 
 #### PostMVP  
 1. show a quantity of items in your shopping cart, individual and in total.
@@ -140,10 +138,10 @@ AirTable 2
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14-15| Pseudocode / actual code | Incomplete
+|July 12| Prompt / Wireframes / Priority Matrix / Timeframes | complete
+|July 13| Project Approval | complete
+|July 13| Core Application Structure (HTML, CSS, etc.) | complete
+|July 14-15| Pseudocode / actual code | complete
 |July 15-16| Initial Clickable Model  | Incomplete
 |July 19| MVP | Incomplete
 |July 20| Presentations | Incomplete
@@ -154,16 +152,15 @@ AirTable 2
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Getting the API rendering data | M | 3 hrs| N/A hrs | N/A hrs |
-| writing Pseudocode | H| 3 hrs| N/A hrs | N/A hrs |
-| Setting up the react folder structure| H | 3hrs| N/A hrs | N/A hrs |
-| Get functionality on routes(inventory ,shopping-cart etc)| H | 3hrs| N/A hrs | N/A hrs |
+| Getting the API rendering data | M | 3 hrs| 3 hrs | 5 hrs |
+| writing Pseudocode | H| 3 hrs| 3 hrs | 4 hrs |
+| Setting up the react folder structure| H | 3hrs| 3 hrs | 3 hrs |
+| Get functionality on routes(inventory ,etc)| H | 3hrs| 3 hrs | N/A hrs |
 | Get the Airtable to display testData | H| 3 hrs| N/A hrs | N/A hrs |
-| Check Airtable for any corrections that need to be made| H| 3 hrs| N/A hrs | N/A hrs |
+| Check Airtable for any corrections that need to be made| H| 3 hrs| 3 hrs | N/A hrs |
 | implement site with working catergory buttons | H | 3 hrs| N/A hrs | N/A hrs |
-| implement item selection to show info of the item (price for example)| H | 3 hrs| N/A hrs | N/A hrs |
-| implement buttons to take items that are displayed into the shopping cart | H | 3 hrs| N/A hrs | N/A hrs |
-| implement shopping cart to display the item and a button to delete items in shopping cart  | H | 3 hrs| N/A hrs | N/A hrs |
+| implement item selection to show info of the item (price for example)| H | 3 hrs| 3 hrs | 4 hrs |
+| implement form to accept new reviews | H | 3 hrs| 6 hrs | N/A hrs |
 | Advance styling for css(flexbox) or (grid) | M | 3 hrs| N/A hrs | N/A hrs |
 | Using media queries for phones/desktops | M | 3 hrs| N/A hrs | N/A hrs |
 | Checking for errors in react syntax | H | 3 hrs| N/A hrs | N/A hrs |
