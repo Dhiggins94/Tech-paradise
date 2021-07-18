@@ -1,0 +1,18 @@
+@media (min-width: 412px){
+  .techinformation{
+    font-size: 20px;
+    line-height: 1;
+  }
+  }
+  @media(max-width: 800px){
+    .techinformation {
+      font-size: 20px;
+      line-height: 1;
+  }
+  }
+  .techinformation{
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  }

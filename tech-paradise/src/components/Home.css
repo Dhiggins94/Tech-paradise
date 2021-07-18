@@ -1,0 +1,13 @@
+@media (min-width: 412px){
+  .home{
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+  }
+  }
+  @media(max-width: 800px){
+  .home {font-size: 20px;
+      line-height: 1;
+      text-align: center;
+  }
+  }

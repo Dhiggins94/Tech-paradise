@@ -3,6 +3,7 @@ import { useEffect,useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router'
 import AddForm from './AddForm'
+import "./techinformation.css"
 
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
@@ -45,7 +46,7 @@ export default function TechInformation() {
     if (Object.keys(device).length !== 0 && device.constructor === Object) {
       fetchAllReviews()
     }
-}, [device,toggle])
+}, [device,toggle,id])
 
   
   const reviewsJSX = allReviews.map((review) => {
@@ -62,7 +63,7 @@ export default function TechInformation() {
 
     
   return (
-    <div>
+    <div className="techinformation">
       {/* throws data on page */}
       <h3> {device.fields?.name}  </h3>
       <br />

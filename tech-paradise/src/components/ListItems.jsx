@@ -3,7 +3,7 @@ import React from 'react'
 import PulseLoader from "react-spinners/PulseLoader";
 import { useState, useEffect } from 'react'
 import axios from 'axios';
-import Tech from './Tech';
+import Tech from './Tech'
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
@@ -30,7 +30,7 @@ if (inventory.length === 0) {
 
 
   return (
-    <>
+    <div >
       {inventory.map((product) => {
         
         return (
@@ -38,7 +38,7 @@ if (inventory.length === 0) {
           <Tech key={product.id} product={product} />
         )
       })}
-    </>
+    </div>
   )
 }
 // filter.jsx

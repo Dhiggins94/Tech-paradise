@@ -1,0 +1,18 @@
+.nav{
+  
+  background-color:  #8B8BAE;
+
+
+}
+
+@media (min-width: 412px){
+  .nav{
+    font-size: 30px;
+    line-height: 2;
+  }
+  }
+  @media(max-width: 800px){
+    .nav {font-size: 20px;
+      line-height: 2;
+  }
+  }

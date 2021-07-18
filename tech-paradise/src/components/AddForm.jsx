@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from "axios"
 import { REVIEW_BASE_URL, headers } from "../services"
-
+import "./form.css"
 export default function AddForm(props) {
   const [name, setName] = useState("")
   const [review, setReview] = useState("")
@@ -28,17 +28,17 @@ export default function AddForm(props) {
   
   
   return (
-    <div>
+    <div >
       <h3>post a new review</h3>
       <form onSubmit={handleSubmit}>
         <label> name</label>
-        <input name="name" value={name} onChange={(e) =>{setName(e.target.value)}} placeholder="put your name"/>
+        <input  name="name" value={name} onChange={(e) =>{setName(e.target.value)}} placeholder="put your name"/>
         <br />
         <label>review</label>
         <input name="review" value={review} onChange={(e) =>{setReview(e.target.value)}} placeholder=" write your review"/>
         <br />
         <label> rating</label>
-        <input name="rating" type="number" value={rating} onChange={ (e) =>{setRating(e.target.valueAsNumber)}}placeholder="give a rating from 1-5"/>
+        <input  name="rating" type="number" value={rating} onChange={ (e) =>{setRating(e.target.valueAsNumber)}}placeholder="give a rating from 1-5"/>
         
         <br />
 <button>Submit Review</button>

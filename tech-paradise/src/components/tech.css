@@ -1,0 +1,18 @@
+.tech{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+@media (min-width: 412px){
+  .tech{
+    font-size: 30px;
+    line-height: 1;
+  }
+  }
+  @media(max-width: 800px){
+  .tech {font-size: 20px;
+      line-height: 1;
+  }
+  }

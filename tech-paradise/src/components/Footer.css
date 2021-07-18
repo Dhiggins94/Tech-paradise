@@ -1,0 +1,28 @@
+.footer{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin-top: auto;
+  text-align: center;
+  background-color: gray;
+  }
+  
+  /* grid display found on mdn website for footer */
+ 
+/*  give opacity of background color to the footer, very light that can mix into the website */
+/*  */
+/*  */
+
+@media (min-width: 412px){
+  .footer{
+    font-size: 30px;
+    line-height: 2;
+  }
+  }
+  @media(max-width: 800px){
+    .footer {font-size: 20px;
+      line-height: 2;
+  }
+  }
+
+
