@@ -71,7 +71,7 @@ export default function TechInformation() {
       <br />
       <p> {device.fields?.productDescription}</p>
       <br />
-      <p> {device.fields?.price}</p>
+      <p> Price: {device.fields?.price}</p>
       <br />
       <AddForm productId={id} setToggle={setToggle} />
       {/* maps through the 2nd table */}
