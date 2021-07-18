@@ -18,26 +18,34 @@ export default function Home() {
   useEffect(() => {
     const fetchCategories = async () => {
       const response = await axios.get(PRODUCT_BASE_URL, { headers })
-      let filterProducts = response.data.records.filter((category) => category.hasKeyboard === true)
-      console.log(filterProducts)
-      
-      console.log(response.data)
+      let filterKeyboards = response.data.records.filter((category) => category.hasKeyboard === true)
+      let filterDesktops = response.data.records.filter((category) => category.hasDesktop === true)
+      let filterMouses = response.data.records.filter((category) => category.hasMouse === true)
+      let filterLaptops = response.data.records.filter((category) => category.hasLaptop === true)
+      let filterMonitors = response.data.records.filter((category) => category.hasMonitor === true)
 
+      console.log(filterMonitors)
+      console.log(filterLaptops)
+      console.log(filterMouses)
+      console.log(filterKeyboards)
+      console.log(filterDesktops)
+      console.log(response.data)
+      setCategory(response.data)
     }
     fetchCategories()
 },[])
 
 
-
+  
   return (
-    <div className="home"> 
+    <div className="home" > 
       <p> Welcome to tech-paradise, this site is used to explore and submit reviews of electonics that are on the market</p>
       <p> press the button at the top to see our selection  </p>
-      <button> desktops </button>
-      <button > laptops </button>
-      <button > {category.fields?.category.hasKeyboard }keyboards </button>
-      <button > mouses </button>
-      <button > monitors </button>
+      <button>   {category.fields?.category.hasDesktop }desktops </button>
+      <button>  {category.fields?.category.hasLaptop}laptops </button>
+      <button> {category.fields?.category.hasKeyboard }keyboards </button>
+      <button> {category.fields?.category.hasMouse } mouses </button>
+      <button>  {category.fields?.category.hasMonitor }monitors </button>
     </div>
   )
 }
