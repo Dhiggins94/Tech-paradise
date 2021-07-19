@@ -28,20 +28,19 @@ export default function AddForm(props) {
   
   
   return (
-    <div >
+    <div className="form">
       <h3>post a new review</h3>
-      <form onSubmit={handleSubmit}>
+      <form  className="field" onSubmit={handleSubmit}>
         <label> name</label>
-        <input  name="name" value={name} onChange={(e) =>{setName(e.target.value)}} placeholder="put your name"/>
+        <textarea  name="name" value={name} onChange={(e) =>{setName(e.target.value)}} placeholder="put your name"/>
         <br />
         <label>review</label>
-        <input name="review" value={review} onChange={(e) =>{setReview(e.target.value)}} placeholder=" write your review"/>
+        <textarea name="review" value={review} onChange={(e) =>{setReview(e.target.value)}} placeholder=" write your review"/>
         <br />
         <label> rating</label>
         <input  name="rating" type="number" value={rating} onChange={ (e) =>{setRating(e.target.valueAsNumber)}}placeholder="give a rating from 1-5"/>
-        
         <br />
-<button>Submit Review</button>
+<button >Submit Review</button>
       </form>
     </div>
   )
