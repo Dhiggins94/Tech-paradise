@@ -1,13 +1,27 @@
 @media (min-width: 412px){
-  .home{
+  .home, .productPlacement {
     font-size: 30px;
     line-height: 1;
     text-align: center;
+      display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
   }
   }
   @media(max-width: 800px){
-  .home {font-size: 20px;
+  .home .productPlacement  {
+    font-size: 20px;
       line-height: 1;
       text-align: center;
+        display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
   }
   }
+
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw; */

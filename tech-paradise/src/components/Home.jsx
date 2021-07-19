@@ -59,11 +59,11 @@ export default function Home() {
       <button onClick= {(e)=>filt("keyboard",e)} > keyboards </button>
       <button onClick= {(e)=>filt("mouse",e)}>  mouses </button>
       <button onClick={(e)=> filt("monitor", e)}>  monitors </button>
-      <div>
+      <div className="productPlacement">
         {filterItems? 
           filterItems.map((product) => (
             <div key={product.id}>
-
+              <img  className="ProductImage" src={product.fields.image} alt="nice pictures"/>
             <p> {product.fields.name}</p>
             </div>
         )):null}
