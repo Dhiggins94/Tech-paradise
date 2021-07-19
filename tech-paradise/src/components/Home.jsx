@@ -37,8 +37,9 @@ export default function Home() {
   
   return (
     <div className="home" > 
-      <p> Welcome to tech-paradise, this site is used to explore and submit reviews of electonics that are on the market</p>
-      <p> press the button at the top to see our selection  </p>
+      <p> Welcome to tech-paradise, this site is used to explore and submit reviews of electonics that are currently on the market</p>
+      <p> press the button at the top to see our enitre selection  </p>
+      <p> You can also press the buttons at the bottom to specify what your looking for</p>
       <button onClick= {(e)=>filt("desktop",e)}>   desktops </button>
       <button onClick= {(e)=>filt("laptop",e)} >  laptops </button>
       <button onClick= {(e)=>filt("keyboard",e)} > keyboards </button>
