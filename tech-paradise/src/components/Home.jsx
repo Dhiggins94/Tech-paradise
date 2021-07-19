@@ -5,11 +5,6 @@ import { useState,useEffect } from 'react'
 import { PRODUCT_BASE_URL, headers } from '../services'
 
 export default function Home() {
-  // const [filterDesktops, setFilterDesktops] = useState("")
-  // const [filterLaptops, setFilterLaptops] = useState("")
-  // const [filterKeyboards, setFilterKeyboards] = useState("")
-  // const [filterMouse, setFilterMouse] = useState("")
-  // const [filterMonitors, setFilterMonitors] = useState("")
 
   const [category, setCategory] = useState("")
   let filter = []
@@ -20,16 +15,6 @@ export default function Home() {
     const fetchCategories = async () => {
       const response = await axios.get(PRODUCT_BASE_URL, { headers })
 
-      // let filterKeyboards = response.data.records.filter((category) => category.hasKeyboard === true)
-      // let filterDesktops = response.data.records.filter((category) => category.hasDesktop === true)
-      // let filterMouses = response.data.records.filter((category) => category.hasMouse === true)
-      // let filterLaptops = response.data.records.filter((category) => category.hasLaptop === true)
-      // let filterMonitors = response.data.records.filter((category) => category.hasMonitor === true)
-      // console.log(filterMonitors)
-      // console.log(filterLaptops)
-      // console.log(filterMouses)
-      // console.log(filterKeyboards)
-      // console.log(filterDesktops)
       console.log(response.data)
       setCategory(response.data.records)
     }
@@ -58,13 +43,14 @@ export default function Home() {
       <button onClick= {(e)=>filt("laptop",e)} >  laptops </button>
       <button onClick= {(e)=>filt("keyboard",e)} > keyboards </button>
       <button onClick= {(e)=>filt("mouse",e)}>  mouses </button>
-      <button onClick={(e)=> filt("monitor", e)}>  monitors </button>
-      <div className="productPlacement">
+      <button onClick={(e) => filt("monitor", e)}>  monitors </button>
+      
+      <div >
         {filterItems? 
           filterItems.map((product) => (
             <div key={product.id}>
-              <img  className="ProductImage" src={product.fields.image} alt="nice pictures"/>
-            <p> {product.fields.name}</p>
+               <p> {product.fields.name}</p>
+              <img className="display" src={product.fields.image} alt="nice pictures"/>
             </div>
         )):null}
       </div>

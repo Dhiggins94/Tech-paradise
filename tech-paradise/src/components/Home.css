@@ -1,27 +1,22 @@
-@media (min-width: 412px){
-  .home, .productPlacement {
+.display{
+  
+  height: 40%;
+  width: 40%;
+}
+
+@media (min-width: 412px) {
+  .home {
     font-size: 30px;
     line-height: 1;
     text-align: center;
-      display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vw;
+    
   }
-  }
-  @media(max-width: 800px){
-  .home .productPlacement  {
+}
+@media (max-width: 800px) {
+  .home {
     font-size: 20px;
-      line-height: 1;
-      text-align: center;
-        display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vw;
+    line-height: 1;
+    text-align: center;
   }
-  }
-
-  /* display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vw; */
+}
+  
