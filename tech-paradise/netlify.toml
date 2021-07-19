@@ -1,4 +1,0 @@
-{build}
- base="tech-paradise"
- command="npm run build"
- publish="tech-paradise/build"
