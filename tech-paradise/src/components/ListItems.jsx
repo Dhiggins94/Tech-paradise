@@ -1,4 +1,3 @@
-// imports go here
 import React from 'react'
 import PulseLoader from "react-spinners/PulseLoader";
 import { useState, useEffect } from 'react'
@@ -20,7 +19,7 @@ export default function ListItems() {
     };
     getInventory()
   }, []);
-  // conditional loading
+  // conditional loading of the loader npm. site of npm package: https://www.npmjs.com/package/react-spinners
 if (inventory.length === 0) {
   return <PulseLoader />
 }
@@ -41,8 +40,3 @@ if (inventory.length === 0) {
     </div>
   )
 }
-// filter.jsx
- // inventory.filter((product) =>{
-// product.fields.catergory === desktop
-// })
-// this maps out data for the LIST OF ALL ITEMS 

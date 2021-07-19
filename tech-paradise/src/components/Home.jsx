@@ -30,8 +30,7 @@ export default function Home() {
          }
       
          useEffect(() => {
-           console.log(filter)
-            // eslint-disable-next-line 
+          //  console.log(filter)
          },[toggle])
   
   

@@ -1,17 +1,12 @@
 .footer{
-   /* min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  margin-top: auto;
-  text-align: center; */
   background-color: gray; 
   min-height: 10vh;
   position: sticky;
-  margin-top:100px;
+  margin-top:300px;
   opacity: .5;
   }
   
-  /* grid display found on mdn website for footer */
+ 
   /* the footer was able to stay on the bottom by looking on css-tricks to learn about position sticky, link resource: https://css-tricks.com/position-sticky-2/   as well as youtube,youtuber known as smashtheshell i learned about  examples of how to use sticky with viewport height. link to resources: https://www.youtube.com/watch?v=TaXql0h_wCA*/
 
 

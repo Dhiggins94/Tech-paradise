@@ -32,7 +32,7 @@ export default function AddForm(props) {
       <h3>post a new review</h3>
       <form  className="field" onSubmit={handleSubmit}>
         <label> name</label>
-        <textarea  name="name" value={name} onChange={(e) =>{setName(e.target.value)}} placeholder="put your name"/>
+        <input  name="name" value={name} onChange={(e) =>{setName(e.target.value)}} placeholder="put your name"/>
         <br />
         <label>review</label>
         <textarea name="review" value={review} onChange={(e) =>{setReview(e.target.value)}} placeholder=" write your review"/>
