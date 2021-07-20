@@ -2,7 +2,8 @@
 
 ## Project Name
 
-Tech-Paradise 
+[Tech-Paradise](https://admiring-bartik-ee0a8f.netlify.app/)
+
 
 ## Project Description
 
