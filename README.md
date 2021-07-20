@@ -2,7 +2,8 @@
 
 ## Project Name
 
-Tech-Paradise 
+[Tech-Paradise](https://admiring-bartik-ee0a8f.netlify.app/)
+
 
 ## Project Description
 
@@ -142,9 +143,9 @@ AirTable 2
 |July 13| Project Approval | complete
 |July 13| Core Application Structure (HTML, CSS, etc.) | complete
 |July 14-15| Pseudocode / actual code | complete
-|July 15-16| Initial Clickable Model  | Incomplete
-|July 19| MVP | Incomplete
-|July 20| Presentations | Incomplete
+|July 15-16| Initial Clickable Model  | complete
+|July 19| MVP | complete
+|July 20| Presentations | W.I.P
 
 ## Timeframes
 
@@ -154,20 +155,20 @@ AirTable 2
 | --- | :---: |  :---: | :---: | :---: |
 | Getting the API rendering data | M | 3 hrs| 3 hrs | 5 hrs |
 | writing Pseudocode | H| 3 hrs| 3 hrs | 4 hrs |
-| Setting up the react folder structure| H | 3hrs| 3 hrs | 3 hrs |
-| Get functionality on routes(inventory ,etc)| H | 3hrs| 3 hrs | N/A hrs |
-| Get the Airtable to display testData | H| 3 hrs| N/A hrs | N/A hrs |
-| Check Airtable for any corrections that need to be made| H| 3 hrs| 3 hrs | N/A hrs |
-| implement site with working catergory buttons | H | 3 hrs| N/A hrs | N/A hrs |
-| implement item selection to show info of the item (price for example)| H | 3 hrs| 3 hrs | 4 hrs |
-| implement form to accept new reviews | H | 3 hrs| 6 hrs | N/A hrs |
-| Advance styling for css(flexbox) or (grid) | M | 3 hrs| N/A hrs | N/A hrs |
-| Using media queries for phones/desktops | M | 3 hrs| N/A hrs | N/A hrs |
-| Checking for errors in react syntax | H | 3 hrs| N/A hrs | N/A hrs |
-| Checking for errors in CSS styling | M | 3 hrs| N/A hrs | N/A hrs |
-| Deploy the website, ask for help using error tickets| L | 2 hrs| N/A hrs | N/A hrs |
-| Practice presnetation | L | 2 hrs| N/A hrs | N/A hrs |
-| Total | N/A |46 hrs| 0 hrs | N/A hrs |
+| Setting up the react folder structure| H | 3hrs| 3 hrs | 2 hrs |
+| Get functionality on routes(inventory ,etc)| H | 3hrs| 3 hrs | 2 hrs |
+| Get the Airtable to display testData | H| 3 hrs| 3 hrs | 6hrs |
+| Check Airtable for any corrections that need to be made| H| 3 hrs| 3 hrs | 4 hrs |
+| implement site with working catergory buttons | H | 3 hrs| 3 hrs | 4 hrs |
+| implement item selection to show info of the item (price for example)| H | 3 hrs| 3 hrs | 6 hrs |
+| implement form to accept new reviews | H | 3 hrs| 3 hrs | 6 hrs |
+| Advance styling for css(flexbox) or (grid) | M | 3 hrs| 3 hrs | 4 hrs |
+| Using media queries for phones/desktops | M | 3 hrs| 3 hrs | 1 hrs |
+| Checking for errors in react syntax | H | 3 hrs| 3 hrs | 6 hrs |
+| Checking for errors in CSS styling | M | 3 hrs| 3 hrs | 2 hrs |
+| Deploy the website, ask for help using error tickets| L | 2 hrs| 3 hrs | 3 hrs |
+| Practice presnetation | L | 2 hrs| 2 hrs | 1 hrs |
+| Total | N/A |46 hrs| 44 hrs | 54 hrs |
 ## SWOT Analysis
 
 ### Strengths: I think my greatest strength is to be able to plan my process throughly with pseudocode. This helps me organize my thoughts and included everything i know i'll need so i dont get distracted adding features at the last minute. As well as learning being able to search online and my own notes for what i need when i encounter problems regarding error messages. Alot of what we did to implementing certain features happened in class so i feel confident in implementing certain features like routes and forms.
