@@ -7,7 +7,7 @@ export default function AddForm(props) {
   const [review, setReview] = useState("")
   const [rating, setRating] = useState(0)
  
-  
+  // handle submit data from form
   const handleSubmit = async (event) => {
     event.preventDefault();
     
@@ -18,7 +18,7 @@ export default function AddForm(props) {
       products: [props.productId]
     }
     console.log(fields)
-
+//post request 
     const response = await axios.post(REVIEW_BASE_URL, { fields }, { headers })
     props.setToggle(prevState => !prevState)
     console.log(response)
@@ -26,7 +26,7 @@ export default function AddForm(props) {
 
   
   
-  
+  // form 
   return (
     <div className="form">
       <h3>post a new review</h3>

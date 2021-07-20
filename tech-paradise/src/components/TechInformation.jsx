@@ -43,6 +43,8 @@ export default function TechInformation() {
       ))
       setAllReviews(filteredReviews)
     }
+    // The constructor property returns a reference to the Object constructor function that created the instance object.
+    // this invokes the get request when the device.length isnt zero and the device is equal to the object
     if (Object.keys(device).length !== 0 && device.constructor === Object) {
       fetchAllReviews()
     }

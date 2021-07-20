@@ -26,8 +26,6 @@ if (inventory.length === 0) {
 
 
 
-
-
   return (
     <div >
       {inventory.map((product) => {
